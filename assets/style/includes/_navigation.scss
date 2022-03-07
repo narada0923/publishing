@@ -1,0 +1,26 @@
+.navigation {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    @include flexItems(row , space-between , center , 0);
+    &__list {
+        @include flexItems(row , center , center , 0);
+        list-style: none;
+        color: #fff;
+        .item {
+            padding: 2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: .3s ease;
+            cursor: pointer;
+            &--active {
+                color: $green;
+            }
+            &:hover {
+                color: $green;
+            }
+        }
+        &:hover {
+
+        }
+    }
+}
