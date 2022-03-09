@@ -7,9 +7,17 @@
 
 html , body {
     font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
+    background-color: $template-bg;
 }
 
 .container {
-    max-width: 1228px;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
+    @media (min-width: 576px) {
+        width: 90%;
+    }
+    @media (min-width: 1250px) {
+        width: 1288px;
+    }
 }

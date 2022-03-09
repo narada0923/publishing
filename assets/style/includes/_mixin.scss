@@ -5,3 +5,9 @@
     align-items: $items;
     gap: $gap;
 }
+
+@mixin arrow($color) {
+    border-top: 20px solid $color;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+}

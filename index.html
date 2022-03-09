@@ -1,32 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <nav class="navigation">
-                <a href="#">
-                    <img src="./assets/images/hd_logo.png" alt="">
-                </a>
-                <ul class="navigation__list">
-                    <li class="item item--active">about</li>
-                    <li class="item">business</li>
-                    <li class="item">portfolio</li>
-                    <li class="item">program</li>
-                    <li class="item">contact</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main style="height: 100vh;"></main>
-    <main style="height: 100vh; background-color: aqua;"></main>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./assets/style/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="navigation">
+                    <a href="#">
+                        <img id="logo" src="./assets/images/hd_logo.png" alt="" />
+                    </a>
+                    <ul class="navigation__list">
+                        <li class="item item--active">about</li>
+                        <li class="item">business</li>
+                        <li class="item">portfolio</li>
+                        <li class="item">program</li>
+                        <li class="item">contact</li>
+                    </ul>
+                    <div class="navigation__burger">
+                        <div class="line"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="hero__clip"></div>
+            <div class="container">
+                <div class="hero__swiper">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="tag">
+                                        <p>모집중</p>
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <div>
+                                        <h3>22 농업기술실용화재단 지원사업 대국민 설명회</h3>
+                                        <p>농업기술실용화 재단</p>
+                                    </div>
+                                    <p>2021. 11. 01 ~ 2021. 11. 30</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="tag">
+                                        <p>모집중</p>
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <div>
+                                        <h3>22 농업기술실용화재단 지원사업 대국민 설명회</h3>
+                                        <p>농업기술실용화 재단</p>
+                                    </div>
+                                    <p>2021. 11. 01 ~ 2021. 11. 30</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="tag tag--yellow">
+                                        <p>모집중</p>
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <div>
+                                        <h3>22 농업기술실용화재단 지원사업 대국민 설명회</h3>
+                                        <p>농업기술실용화 재단</p>
+                                    </div>
+                                    <p>2021. 11. 01 ~ 2021. 11. 30</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <div class="tag tag--yellow">
+                                        <p>모집중</p>
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <div>
+                                        <h3>22 농업기술실용화재단 지원사업 대국민 설명회</h3>
+                                        <p>농업기술실용화 재단</p>
+                                    </div>
+                                    <p>2021. 11. 01 ~ 2021. 11. 30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <script src="./assets/js/script.js"></script>
-</body>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            new Swiper(".swiper", {
+                scrollbar: {
+                    el: ".swiper-scrollbar"
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    600: {
+                        slidesPerView: 2,
+                    },
+                    800: {
+                        slidesPerView: 3,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                    },
+                },
+            });
+        </script>
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>

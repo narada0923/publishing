@@ -1,7 +1,9 @@
 class DOM {
     header = document.querySelector(".header");
+    navBtn = document.querySelector('.navigation__burger');
     constructor(){
         this.listenEvents();
+        
     }
 
     changeHeader(){
@@ -11,10 +13,16 @@ class DOM {
             this.header.classList.remove('header--bg');
         }
     }
+
+    openNavigation(){
+        this.navBtn.children[0].classList.toggle('active')
+    }
     
     listenEvents(){
+        this.navBtn.addEventListener('click' , this.openNavigation.bind(this));
         document.addEventListener('scroll' , this.changeHeader.bind(this));
     }
 }
 
-new DOM();
+
+const app = new DOM();
