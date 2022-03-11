@@ -80,6 +80,9 @@
         width: 100%;
         padding-top: 2rem;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         button {
             background-color: #35AF8B;
             color: white;
@@ -88,7 +91,11 @@
             border: 1px solid #35AF8B;
             font-weight: bold;
             font-family: $noto;
-            @include flexItems(row , center , center , .5rem)
+            @include flexItems(row , center , center , .5rem);
+            &.light {
+                background-color: white;
+                color: #35AF8B;
+            }
         }
     }
 

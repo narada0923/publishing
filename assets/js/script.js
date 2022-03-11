@@ -6,6 +6,7 @@ class DOM {
     slideTextContainer = document.querySelector('.hex__slider__layer');
     mobileNav = document.querySelector('.mobile-navigation');
     mobileNavItems = document.querySelectorAll('.navItem__item');
+    categorySelectItems = document.querySelectorAll('.portfolio__category .select')
     hexPics = [
         {
             url: "#",
@@ -62,6 +63,12 @@ class DOM {
         })
     }
 
+    categoryActiveToggler(){
+        this.categorySelectItems?.forEach((el) => {
+            el.classList.remove('select--active')
+        })
+    }
+
     listenEvents() {
         this.navBtn.addEventListener("click", this.openNavigation.bind(this));
         document.addEventListener("scroll", this.changeHeader.bind(this));
@@ -88,6 +95,13 @@ class DOM {
                 this.mobileNavToggle();
                 el.classList.add('active');
                 el.children[1].classList.add('sublist--active')
+            })
+        });
+
+        this.categorySelectItems.forEach((el , index) => {
+            el.addEventListener('click' , () => {
+                this.categoryActiveToggler();
+                el.classList.add('select--active');
             })
         })
     }

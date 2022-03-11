@@ -579,50 +579,17 @@ html, body {
 }
 
 .main {
-  width: 100%;
   background-color: white;
+  width: 100%;
 }
 
-.business {
+.portfolio {
   width: 100%;
   padding: 3rem 0;
 }
 
-.business__details {
+.portfolio__category {
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.business__card {
-  height: 198px;
-  border: 1px solid #e7e7e7;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0;
-}
-
-.business__card .backdrop {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,165 +604,25 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   gap: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.business__card .backdrop h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 100px;
-  font-weight: 800;
-  color: #f8f8f8;
+.portfolio__category .select {
+  list-style: none;
+  color: #CACACA;
+  font-weight: 700;
+  padding: .5rem 1.5rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-.business__card .info {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-.business__card .info .type {
-  font-weight: 500;
-  font-size: 1rem;
-  color: #222;
-  margin-bottom: 5px;
-}
-
-.business__card .info .title {
-  color: #578C76;
-  margin-bottom: 1rem;
-}
-
-.business__card .info .description {
-  color: #444;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.business__card .link {
-  color: #444;
-  font-size: 12px;
-  font-weight: 500;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: .5rem;
-  text-decoration: underline;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: .5rem;
-  cursor: pointer;
-}
-
-.business__card .link img {
-  width: 12px;
-}
-
-.business__btn {
-  width: 100%;
-  padding-top: 2rem;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1rem;
-}
-
-.business__btn button {
-  background-color: #35AF8B;
-  color: white;
-  width: 100%;
-  padding: 1.25rem;
-  border: 1px solid #35AF8B;
-  font-weight: bold;
-  font-family: "Noto Sans KR", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.5rem;
-}
-
-.business__btn button.light {
-  background-color: white;
+.portfolio__category .select--active {
   color: #35AF8B;
 }
 
-@media (min-width: 768px) {
-  .business__details {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .business__card .backdrop h1 {
-    font-size: 140px;
-  }
-  .business__btn {
-    padding-top: 4rem !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 1rem;
-  }
-  .business__btn button {
-    width: 300px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .business {
-    padding: 7rem 0;
-  }
-  .business__details {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-  .business__card {
-    height: 310px;
-  }
-  .business__card .backdrop h1 {
-    font-size: 180px;
-  }
-  .business__card .info .type {
-    font-size: 20px;
-  }
-  .business__card .info .title {
-    font-size: 28px;
-  }
-  .business__card .info .description {
-    font-size: 1rem;
-  }
-  .business__card .link {
-    bottom: 1.5rem;
-    font-size: 13px;
-  }
+.portfolio__category .select--eng {
+  font-family: "Montserrat", sans-serif;
 }
 
 .rocket {
@@ -1081,4 +908,4 @@ html, body {
     display: flex !important;
   }
 }
-/*# sourceMappingURL=business.css.map */
+/*# sourceMappingURL=portfolio.css.map */

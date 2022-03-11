@@ -483,12 +483,17 @@ html, body {
   margin-top: 1rem;
 }
 
+.hero__content__title h1.big--eng {
+  font-family: "Montserrat", sans-serif;
+}
+
 @media (min-width: 800px) {
   .hero__content__title h1.big {
     font-size: 48px !important;
   }
   .hero__content__title h1.big ~ p {
     font-size: 24px;
+    line-height: 38px;
   }
 }
 

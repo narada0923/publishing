@@ -1,0 +1,27 @@
+.main {
+    background-color: white;
+    width: 100%;
+}
+
+.portfolio {
+    width: 100%;
+    padding: 3rem 0;
+    &__category {
+        width: 100%;
+        @include flexItems(row , center , center , 0);
+        flex-wrap: wrap;
+        .select {
+            list-style: none;
+            color: #CACACA;
+            font-weight: 700;
+            padding: .5rem 1.5rem;
+            transition: all .3s ease-in-out;
+            &--active {
+                color: #35AF8B;
+            }
+            &--eng {
+                font-family: $motserrat;
+            }
+        }
+    }
+}
