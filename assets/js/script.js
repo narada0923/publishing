@@ -65,7 +65,7 @@ class DOM {
     listenEvents() {
         this.navBtn.addEventListener("click", this.openNavigation.bind(this));
         document.addEventListener("scroll", this.changeHeader.bind(this));
-        this.hexNav.forEach((el, index) => {
+        this.hexNav?.forEach((el, index) => {
             el.style.backgroundImage = `url(${this.hexPics[index].path})`;
             el.addEventListener("click", () => {
                 const {url , path , title , description} = this.hexPics[index];
