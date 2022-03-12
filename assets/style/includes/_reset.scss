@@ -14,10 +14,7 @@ html , body {
 .container {
     width: 90%;
     margin: 0 auto;
-    @media (min-width: 576px) {
-        width: 90%;
-    }
-    @media (min-width: 1250px) {
+    @media (min-width: 1300px) {
         width: 1288px;
     }
 }

@@ -17,13 +17,7 @@ html, body {
   margin: 0 auto;
 }
 
-@media (min-width: 576px) {
-  .container {
-    width: 90%;
-  }
-}
-
-@media (min-width: 1250px) {
+@media (min-width: 1300px) {
   .container {
     width: 1288px;
   }
@@ -744,6 +738,11 @@ html, body {
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.hex__header .tex p a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .hex__header .tex-img {
