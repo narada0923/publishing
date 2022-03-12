@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/style/portfolio.css">
+    <title>모집 중인 프로그램</title>
+    <link rel="stylesheet" href="./assets/style/programms.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -64,134 +64,86 @@
             <div class="container">
                 <div class="hero__content">
                     <div class="hero__content__title">
-                        <h1 class="big big--eng">PORTFOLIO</h1>
-                        <p>인트윈에서 진행한 사업 한 눈에 보기</p>
+                        <h1 class="big big--eng">PROGRAM</h1>
+                        <p>인트윈에서 진행중인 프로그램을 소개합니다.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- hero starts -->
+    <!-- hero ends -->
 
     <!-- main starts -->
     <main class="main">
         <div class="container">
-            <div class="portfolio">
-                <div class="portfolio__category">
-                    <li class="select select--active">전체</li>
-                    <li class="select">창업지원</li>
-                    <li class="select">마케팅지원</li>
-                    <li class="select">영상콘텐츠</li>
-                    <li class="select select--eng">MICE</li>
-                </div>
-                <div class="portfolio__filter">
-                    <div class="portfolio__select">
-                        <p class="cat">제목</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <ul id="options" class="options">
-                            <li class="options__item">제목</li>
-                            <li class="options__item">내용</li>
-                            <li class="options__item">제목 + 내용</li>
-                            <li class="options__item">태그</li>
-                        </ul>
-                    </div>
-                    <div class="portfolio__search">
-                        <input type="text" placeholder="검색어를 입력하세요.">
-                        <button class="search"></button>
-                    </div>
-                </div>
-                <div class="portfolio__items">
-                    <!-- <div class="item">
-                        <div class="mark">
-                            창업지원
+            <div class="programm">
+                <div class="programm__view">
+                    <div class="programm__view__title">
+                        <h1>22 농업기술실용화재단 지원사업 
+                            대국민 설명회</h1>
+                        <div class="date-short">
+                            <p>농업기술실용화 재단</p>
+                            <p class="eng">2021. 11. 01 ~ 2021. 11. 30</p>
                         </div>
-                        <div class="item__thumbnail">
-                            <img src="./assets/images/portfolio-pic.jpeg" alt="">
+                    </div>
+                    <div class="programm__view__content">
+                        <div class="content-thumbnail">
+                            <img src="./assets/images/programm-bg.jpeg" alt="">
                         </div>
-                        <div class="itms">
-                            <div class="item__title-section">
-                                <img src="./assets/images/hd_logo.png" alt="">
-                                <h1 class="title">영등포구청 청년창업생태계 조성사업</h1>
-                                <div class="button-group">
-                                    <button class="btn">
-                                        <p>#영등포구청</p>
-                                    </button>
-                                    <button class="btn">
-                                        <p>#청년창업생태계</p>
-                                    </button>
-                                    <button class="btn">
-                                        <p>#조성사업</p>
-                                    </button>
+                        <div class="more">
+                            <div class="dtl">
+                                <div class="content-title">
+                                    <h1>22 농업기술실용화재단 지원사업 
+                                        대국민 설명회</h1>
+                                </div>
+                                <div class="content-table">
+                                    <div class="name">
+                                        <p>기</p>
+                                        <p>간</p>
+                                    </div>
+                                    <div class="description">
+                                        <p class="eng">2020.06 ~2020.12</p>
+                                    </div>
+                                    <div class="name">
+                                        <p>주</p>
+                                        <p>최</p>
+                                    </div>
+                                    <div class="description">
+                                        <p>농업기술실용화 재단</p>
+                                    </div>
+                                </div>
+                                <div class="content-description">
+                                    <p>사업화 지원금 1천만원 10개팀 지원 및 액셀러레이팅, <br>
+                                        크라우드펀딩,시제품제작 지원 등</p>
                                 </div>
                             </div>
-                            <div class="item__details">
-                                <div class="name">
-                                    <p>목</p>
-                                    <p>적</p>
-                                </div>
-                                <div class="description">
-                                    영등포 관내 청년 창업가 발굴 및 
-                                    활성화를 위한 생태계 조성
-                                </div>
-                                <div class="name date">
-                                    <p>기</p>
-                                    <p>간</p>
-                                </div>
-                                <div class="description date">
-                                    2020.06 ~2020.12
-                                </div>
-                                <div class="name support">
-                                    <p>지원내용</p>
-                                </div>
-                                <div class="description support">
-                                    사업화 지원금 1천만원 10개팀 지원 및 
-                                    액셀러레이팅,  크라우드펀딩,
-                                    시제품제작 지원 등
-                                </div>
-                                <div class="name performance">
-                                    <p>사업성과</p>
-                                </div>
-                                <div class="description performance">
-                                    후속 투자 유치 60억, 크라우드펀딩 
-                                    1억 달성, 
-                                    기업 매출 14억 이상 증대
-                                </div>
-                                <div class="name award">
-                                    <p>대</p>
-                                    <p>상</p>
-                                </div>
-                                <div class="description award">
-                                    청년창업기업 30개사 및 
-                                    예비창업자 500명
-                                </div>
+                            <div class="content-btn">
+                                <p>신청하기</p>
+                                <img src="./assets/images/Vector.png" alt="">
                             </div>
                         </div>
-                    </div> -->
-                </div>
-                <div class="pagination">
-                    <div class="pagination__item hidden">
-                        <div class="button first">
-                            <img src="./assets/images/Vector (Stroke).svg" alt="">
-                            <img src="./assets/images/Vector (Stroke).svg" alt="">
-                        </div>
-                        <div class="button prev">
-                            <img src="./assets/images/Vector (Stroke).svg" alt="">
-                        </div>
                     </div>
-                    <div class="pagination__item">
-                        <div class="page active">1</div>
-                        <div class="page">2</div>
-                        <div class="page">3</div>
-                        <div class="page">4</div>
-                        <div class="page">5</div>
-                    </div>
-                    <div class="pagination__item">
-                        <div class="button next">
-                            <img src="./assets/images/Vector (Stroke).svg" alt="">
+
+                    <div class="programm__view__pic">
+                        <h1 class="sub-title">사업 소개</h1>
+                        <div class="cover">
+                            <img src="./assets/images/programm-bg.jpeg" alt="">
                         </div>
-                        <div class="button last">
-                            <img src="./assets/images/Vector (Stroke).svg" alt="">
-                            <img src="./assets/images/Vector (Stroke).svg" alt="">
+
+                        <div class="table">
+                            <div class="table__item">
+                                <i class="fas fa-chevron-up"></i>
+                                <p class="dd">이전글</p>
+                                <p class="trunc">22 농업기술실용화재단 지원사업 대국민 술실용화재단 지원사업 대국민</p>
+                            </div>
+                            <div class="table__item">
+                                <i class="fas fa-chevron-down"></i>
+                                <p class="dd">이전글</p>
+                                <p class="trunc">22 농업기술실용화재단 지원사업 대국민 술실용화재단 지원사업 대국민</p>
+                            </div>
+                        </div>
+                        <div class="list-btn">
+                            <button>LIST</button>
                         </div>
                     </div>
                 </div>
