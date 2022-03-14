@@ -1390,6 +1390,7 @@ html, body {
   margin: 0;
   font-weight: 700;
   font-family: "Noto Sans KR", sans-serif;
+  white-space: nowrap;
 }
 
 @media (min-width: 800px) {
