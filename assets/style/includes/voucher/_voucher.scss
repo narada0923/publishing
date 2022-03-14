@@ -1,0 +1,49 @@
+.main {
+    width: 100%;
+    background-color: white;
+}
+
+.voucher {
+    width: 100%;
+    padding: 7rem 0;
+
+    &__items {
+        .title {
+            font-weight: 700;
+            font-size: 20px;
+            color: #222222;
+            margin-bottom: 1rem;
+        }
+
+        .items {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .description {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #333333;
+            }
+
+            .btn {
+                width: 300px;
+                button {
+                    background-color: #fff;
+                    color: #35af8b;
+                    width: 100%;
+                    padding: 1.25rem;
+                    border: 1px solid #35af8b;
+                    font-weight: bold;
+                    font-family: $noto;
+                    @include flexItems(row, center, center, 0.5rem);
+                }
+            }
+        }
+    }
+    &__images {
+        padding-top: 60px;
+    }
+}
